@@ -21,7 +21,7 @@ A **fun and interactive** music quiz app that challenges users to guess songs, a
 
 
 ## 📲 **Tech Stack**  
-🔹 **Android (Java/Kotlin)** – Mobile development  
+🔹 **Android (Java)** – Mobile development  
 🔹 **Auth0** – Secure authentication  
 🔹 **MediaPlayer API** – Audio playback  
 🔹 **Glide** – Efficient image loading  
