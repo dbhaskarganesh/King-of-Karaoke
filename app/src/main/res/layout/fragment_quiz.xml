@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/questionAppCompatTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_medium"
+            android:paddingVertical="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="@string/high_score"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/musicPlayTrackSeekBar"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/questionAppCompatTextView"/>
+
+        <LinearLayout
+            android:id="@+id/musicActionLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musicPlayTrackSeekBar"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/playAppCompatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_medium"
+                android:text="@string/play" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pauseAppCompatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_medium"
+                android:text="@string/pause" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/albumAppCompatImageView"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/hint_placeholder"
+            android:layout_below="@+id/musicActionLinearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="@dimen/_12sdp"
+            android:scaleType="centerCrop"/>
+
+        <RadioGroup
+            android:id="@+id/optionSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/albumAppCompatImageView">
+
+            <RadioButton
+                android:id="@+id/optionA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_a"/>
+
+            <RadioButton
+                android:id="@+id/optionB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_b"/>
+
+            <RadioButton
+                android:id="@+id/optionC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_c"/>
+
+            <RadioButton
+                android:id="@+id/optionD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_d"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/controlsActionLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/optionSelect"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/previousAppCompatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_medium"
+                android:text="@string/previous" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nextAppCompatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_medium"
+                android:text="@string/next" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitAppCompatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo_medium"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_below="@+id/controlsActionLinearLayout"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
