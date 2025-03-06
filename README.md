@@ -3,7 +3,6 @@
 ### 🎤 **King of Karaoke** 🎶  
 A **fun and interactive** music quiz app that challenges users to guess songs, artists, and albums based on lyrics and audio snippets!  
 
-![Music Animation](https://media.giphy.com/media/l0HlBoEYMLfnyyFPO/giphy.gif)  
 
 ---
 
